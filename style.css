@@ -127,42 +127,38 @@ body {
   z-index: 1;
 }
 
-.article {
+.presentation-cards {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
-#intro,
-#présentation {
-  background-color: #a4d4d4;
-  padding: 1rem 1rem 1rem 1rem;
-  border-radius: 0.5rem;
+.card {
+  background: #c6cfd6;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  min-width: 60%;
+  flex: 1 1 290px;
+  max-width: 80%;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.article h3 {
-  padding-left: 0.6rem;
-  margin-top: 2rem;
-  font-weight: 600;
-  font-size: 2em;
+.card h3 {
+  margin-top: 0;
+  color: #2a2001;
+  font-family: "Pirata One", "Roboto", cursive;
+  letter-spacing: 1px;
+  font-size: 2.2em;
 }
 
-.article p {
+.card p {
+  color: rgba(40, 39, 39, 0.667);
+  line-height: 1.7;
   font-size: 1.5em;
-}
-
-.table-of-contents {
-  background: #f4efe3;
-  border: 1px solid #f0e6d4;
-  border-radius: 0.45rem;
-  font-size: 0.98rem;
-  padding: 1em 1.3em;
-  box-shadow: 0 1px 6px #0002;
-  margin-bottom: 2em;
-}
-.table-of-contents ol {
-  margin: 0;
-  padding-left: 1.4em;
 }
 
 figure {
