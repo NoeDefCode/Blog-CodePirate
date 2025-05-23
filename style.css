@@ -133,11 +133,22 @@ body {
   gap: 0.2rem;
 }
 
-.article h2 {
-  border-left: 3px solid var(--accent);
+#intro,
+#présentation {
+  background-color: #a4d4d4;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.article h3 {
   padding-left: 0.6rem;
   margin-top: 2rem;
   font-weight: 600;
+  font-size: 2em;
+}
+
+.article p {
+  font-size: 1.5em;
 }
 
 .table-of-contents {
@@ -168,33 +179,84 @@ figure img {
   border-radius: 0.3em;
   box-shadow: 0 1px 6px #0002;
 }
-figcaption {
-  color: #555;
-  font-size: 0.94em;
-  margin-top: 0.5em;
+#articles-recents {
+  margin: 40px 0;
+  text-align: center;
 }
 
-pre {
-  background: #151845;
+#articles-recents h2 {
+  font-family: "Fascinate Inline", cursive;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.liste-articles {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.article-card {
+  display: block;
+  background: rgba(33, 39, 56, 0.95);
   color: #fff;
-  padding: 1em;
-  border-radius: 0.4em;
-  overflow-x: auto;
-  margin: 1em 0 2em 0;
-  font-size: 16px;
-}
-code {
-  font-family: "Fira Mono", "Consolas", monospace;
+  border-radius: 16px;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.12), 0 2px 6px #1cb6c9a0;
+  padding: 2em 2em 1.2em 2em;
+  max-width: 340px;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.17s, box-shadow 0.17s, background 0.2s;
+  border: 1px solid #1cb6c9;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.3rem;
-  margin: 2em 0;
+.article-card:hover,
+.article-card:focus {
+  transform: translateY(-5px) scale(1.04);
+  background: #222b38;
+  box-shadow: 0 6px 32px #1cb6c9bb, 0 2px 8px #0004;
+  border: 1.5px solid #fff;
 }
-.gallery figure {
-  margin: 0;
+
+.article-content h3 {
+  margin: 0 0 0.7em;
+  font-family: "Lexend", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #1cb6c9;
+  letter-spacing: 0.5px;
+}
+
+.article-content .date {
+  color: #b9e0e3;
+  font-size: 0.98em;
+  margin-bottom: 0.4em;
+  font-style: italic;
+}
+
+.article-content .description {
+  margin: 0.7em 0 0 0;
+  font-size: 1.08em;
+  color: #eef7fa;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 700px) {
+  .liste-articles {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+  }
+
+  .article-card {
+    max-width: 90vw;
+    padding: 1.2em;
+  }
 }
 
 @media (max-width: 900px) {
