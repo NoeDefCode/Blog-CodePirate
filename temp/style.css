@@ -71,8 +71,7 @@ body {
 .hero {
   width: 100%;
   min-height: 600px;
-  background: url("../images/Capture_d_écran_install_simba.png") center/cover
-    no-repeat fixed;
+  background: url("../images/install_samba.png") center/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
