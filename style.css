@@ -71,8 +71,7 @@ body {
 .hero {
   width: 100%;
   min-height: 950px;
-  background: url("/home/bignono/html-boilerplate/BluJim/zonegris/images/accueil_zonegrise.jpg")
-    center/cover no-repeat fixed;
+  background: url("images/accueil_zonegrise.jpg") center/cover no-repeat fixed;
   display: flex;
   align-items: center;
   justify-content: center;
