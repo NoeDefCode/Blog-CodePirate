@@ -70,8 +70,8 @@ body {
 
 .hero {
   width: 100%;
-  min-height: 500px;
-  background: url("../images/cyber.jpg") center/cover no-repeat fixed;
+  min-height: 400px;
+  background: rgb(30, 29, 29);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@ body {
 }
 
 .hero__overlay .hero__title {
-  font-size: 20ex;
+  font-size: 10ex;
   text-shadow: 0 2px 16px #000a, 0 1px 3px #121212;
 }
 
@@ -147,8 +147,8 @@ body {
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(45, 62, 80, 0.08);
   padding: 1.3rem 1.2rem;
-  width: 355px; /* même taille pour toutes */
-  height: 148px; /* force la même hauteur */
+  width: 355px;
+  height: 148px;
   box-sizing: border-box;
   display: flex;
   align-items: stretch;
