@@ -89,8 +89,17 @@ body {
   color: #f4efe3;
 }
 
+.hero__title {
+  font-size: clamp(5.5rem, 3.7vw, 20rem);
+  line-height: 1.16;
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 1vw, 5.5rem);
+  line-height: 1.05;
+}
+
 .hero__overlay .hero__title {
-  font-size: 20ex;
   text-shadow: 0 2px 16px #000a, 0 1px 3px #121212;
 }
 
@@ -147,8 +156,8 @@ body {
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(45, 62, 80, 0.08);
   padding: 1.3rem 1.2rem;
-  width: 355px; /* même taille pour toutes */
-  height: 148px; /* force la même hauteur */
+  width: 355px; 
+  height: 148px; 
   box-sizing: border-box;
   display: flex;
   align-items: stretch;
@@ -196,13 +205,26 @@ body {
   background: #eee;
 }
 
-/* Effet hover subtil */
+
 .card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 6px 24px 0 rgba(45, 62, 80, 0.18);
 }
 
-/* Responsive : affiche en colonne sur mobile */
+@media (max-width: 600px) {
+  .hero__title .hero__subtitle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
 @media (max-width: 950px) {
   .presentation-cards {
     flex-direction: column;
@@ -230,7 +252,7 @@ body {
     padding: 1rem 0.5rem;
   }
   .hero__title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 650px) {

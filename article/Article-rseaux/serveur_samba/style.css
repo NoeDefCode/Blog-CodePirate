@@ -90,6 +90,16 @@ body {
   color: #f4efe3;
 }
 
+.hero__title {
+  font-size: clamp(5.5rem, 3.7vw, 20rem);
+  line-height: 1.16;
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 1vw, 5.5rem);
+  line-height: 1.05;
+}
+
 .main-content-wrapper {
   display: flex;
   justify-content: center;
@@ -180,6 +190,19 @@ code {
 .gallery figure {
   margin: 0;
 }
+
+@media (max-width: 600px) {
+  .hero__title .hero__subtitle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
 @media (max-width: 900px) {
   .main-content {
